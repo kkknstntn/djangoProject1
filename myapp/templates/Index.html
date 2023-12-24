@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>kmkml</title>
+  </head>
+  <body>
+    <table border="1">
+      <tr>
+        <th>id</th>
+        <th>среднее кол-во баллов</th>
+      </tr>
+      {% for displaydata in displaydata %}
+      <tr>
+        <td>{{displaydata.0 }}</td>
+      <td>{{displaydata.1 }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
